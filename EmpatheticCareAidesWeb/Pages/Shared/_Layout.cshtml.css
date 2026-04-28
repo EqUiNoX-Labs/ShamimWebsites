@@ -1,0 +1,8 @@
+﻿/* Scoped bundle: keep minimal overrides for Bootstrap navbar + links */
+a {
+  color: #3949ab;
+}
+
+a:hover {
+  color: #6a1b9a;
+}

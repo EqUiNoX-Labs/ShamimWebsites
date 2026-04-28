@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maid 4 U Services — professional home cleaning in Leduc, Alberta and nearby areas. From grime to shine in no time. Trusted, reliable, special rates for seniors." />
+    <title>@ViewData["Title"] - Maid 4 U Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Maid4UServicesWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="maid-header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top maid-nav" aria-label="Primary">
+            <div class="container maid-nav-bar">
+                <a class="navbar-brand maid-brand d-flex align-items-center gap-2 flex-shrink-0" href="#S1">
+                    <span class="maid-logo" aria-hidden="true">
+                        <svg viewBox="0 0 48 48" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 38h32v4H8v-4Z" fill="currentColor" opacity=".25" />
+                            <path d="M10 20 L24 8 L38 20 V36 H10 Z" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M18 32 L28 22 M20 34 L32 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M22 12 L24 6 L26 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <circle cx="20" cy="14" r="1" fill="currentColor" />
+                            <circle cx="24" cy="11" r="1" fill="currentColor" />
+                            <circle cx="28" cy="14" r="1" fill="currentColor" />
+                            <circle cx="26" cy="17" r="1" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <span class="brand-text text-start">
+                        <span class="brand-main text-nowrap">Maid 4 U</span>
+                        <span class="brand-sub text-nowrap">SERVICES</span>
+                    </span>
+                </a>
+                <button class="navbar-toggler maid-nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#maidNav" aria-controls="maidNav" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse maid-nav-collapse" id="maidNav">
+                    <ul class="navbar-nav maid-nav-links ms-lg-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S2">Why us</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S3">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S4">Services</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S5">Service area</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S6">About</a></li>
+                        <li class="nav-item"><a class="nav-link maid-nav-link" href="#S7">Contact</a></li>
+                    </ul>
+                    <div class="maid-nav-actions d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2 gap-lg-3 ms-lg-auto">
+                        <a class="maid-nav-phone d-inline-flex align-items-center justify-content-center justify-content-lg-start gap-2 text-decoration-none" href="tel:+16044402458">
+                            <svg class="maid-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                            <span>604 440 2458</span>
+                        </a>
+                        <a class="btn btn-maid btn-sm px-4 py-2 rounded-pill text-center" href="mailto:info@maid4uservices.ca?subject=Free%20estimate">Free estimate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="maid-main">
+        @RenderBody()
+    </main>
+
+    <footer class="maid-footer text-white" role="contentinfo">
+        <div class="maid-footer-accent" aria-hidden="true"></div>
+        <div class="container">
+            <div class="row maid-footer-grid py-5 g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-start gap-3">
+                        <span class="maid-footer-logo" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 38h32v4H8v-4Z" fill="currentColor" opacity=".25" />
+                                <path d="M10 20 L24 8 L38 20 V36 H10 Z" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M18 32 L28 22 M20 34 L32 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M22 12 L24 6 L26 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <circle cx="20" cy="14" r="1" fill="currentColor" />
+                                <circle cx="24" cy="11" r="1" fill="currentColor" />
+                                <circle cx="28" cy="14" r="1" fill="currentColor" />
+                                <circle cx="26" cy="17" r="1" fill="currentColor" />
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="maid-footer-brand mb-2">Maid 4 U <span class="maid-footer-brand-services">SERVICES</span></p>
+                            <div class="d-flex flex-column gap-3">
+                                <p class="maid-footer-tagline mb-0">From grime to shine in no time. Let us take care of the cleaning, so you can enjoy what matters most.</p>
+                                <p class="small text-white-50 mb-0">Proudly serving <strong class="text-white-50">Leduc, Alberta</strong> and nearby communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h2 class="maid-footer-heading">Explore</h2>
+                    <ul class="list-unstyled maid-footer-links mb-0">
+                        <li><a href="#S1">Home</a></li>
+                        <li><a href="#S2">Why us</a></li>
+                        <li><a href="#S3">Gallery</a></li>
+                        <li><a href="#S4">Services</a></li>
+                        <li><a href="#S5">Service area</a></li>
+                        <li><a href="#S6">About</a></li>
+                        <li><a href="#S7">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-4 col-xl-3 ms-lg-auto">
+                    <h2 class="maid-footer-heading">Get in touch</h2>
+                    <ul class="list-unstyled maid-footer-contact mb-0">
+                        <li>
+                            <a class="maid-footer-contact-link" href="tel:+16044402458">
+                                <svg class="maid-footer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                <span>604 440 2458</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="maid-footer-contact-link" href="mailto:info@maid4uservices.ca">
+                                <svg class="maid-footer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round" /><path d="m22 6-10 7L2 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                <span>info@maid4uservices.ca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="maid-footer-contact-link" href="https://maid4uservices.ca" rel="noopener noreferrer">
+                                <svg class="maid-footer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                <span>maid4uservices.ca</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-maid btn-sm rounded-pill mt-3 px-4" href="mailto:info@maid4uservices.ca?subject=Free%20estimate">Request a free estimate</a>
+                </div>
+            </div>
+            <div class="maid-footer-bottom py-4">
+                <div class="row align-items-center gy-2">
+                    <div class="col-md-8 text-center text-md-start">
+                        <p class="small text-white-50 mb-0">&copy; @DateTime.UtcNow.Year Maid 4 U Services. Professional home cleaning.</p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a class="maid-footer-legal small" asp-page="/Privacy">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

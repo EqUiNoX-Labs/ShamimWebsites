@@ -1,0 +1,192 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Professional home cleaning";
+}
+
+<section class="hero" id="S1">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-7 reveal">
+                <p class="text-uppercase small text-white-50 mb-2 letter-spacing-1">Professional home cleaning</p>
+                <h1 class="hero-tagline mb-3">From Grime To Shine In No Time</h1>
+                <p class="hero-lead mb-4">
+                    Maid 4 U Services brings dependable, high-quality cleaning to your door so your home feels fresh, calm, and ready for life—not chores.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a class="btn btn-maid btn-lg" href="mailto:info@maid4uservices.ca?subject=Free%20estimate%20request">Request a free estimate</a>
+                    <a class="btn btn-outline-light btn-lg rounded-pill" href="tel:+16044402458">Call 604 440 2458</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true"></div>
+</section>
+
+<div class="container pb-5">
+    <div class="row mb-5">
+        <div class="col-lg-10 mx-auto text-center reveal">
+            <p class="lead text-secondary mb-0">
+                Whether you need a one-time deep clean or recurring visits, we treat your space with care—so you can focus on what matters most.
+            </p>
+        </div>
+    </div>
+
+    <section class="mb-5 pb-4" id="S2">
+        <h2 class="section-title anchor">Why families choose Maid 4 U</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card reveal stagger-1">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5" /><path d="M6 20v-1.2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4V20" /></svg>
+                    </div>
+                    <h3 class="h5">Special rate for seniors</h3>
+                    <p class="text-secondary mb-0">We respect our community with pricing that helps seniors enjoy a spotless home without worry.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card reveal stagger-2">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21" /><path d="M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.6 16.6l-1.8 1.8" /><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" /></svg>
+                    </div>
+                    <h3 class="h5">High quality cleaning</h3>
+                    <p class="text-secondary mb-0">Thorough checklists, careful products, and attention to the details that make a home feel renewed.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card reveal stagger-3">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 9.5-8 10.5-4.5-1-8-5.5-8-10.5V7l8-4z" /><path d="M9 12l2 2 4-4" /></svg>
+                    </div>
+                    <h3 class="h5">Trusted &amp; reliable</h3>
+                    <p class="text-secondary mb-0">Consistent scheduling, clear communication, and professionals who respect your home and privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5 pb-4" id="S3">
+        <h2 class="section-title anchor">See the transformation</h2>
+        <p class="text-secondary col-lg-9 mb-4 reveal">
+            Drag the slider (or tap the photo) to compare a cluttered, tired space with the same room after a professional refresh. It is the same story we bring to every visit: <strong>from overwhelming to inviting</strong>.
+        </p>
+        <div class="ba-wrap is-transitioning reveal" data-before-after style="--split: 50%;">
+            <img class="ba-after"
+                 src="~/images/compare-after.jpg"
+                 asp-append-version="true"
+                 alt="Bright, tidy living space after cleaning"
+                 width="1600"
+                 height="1000"
+                 loading="lazy" />
+            <div class="ba-before-clip" aria-hidden="true">
+                <img src="~/images/compare-before.jpg"
+                     asp-append-version="true"
+                     alt=""
+                     width="1600"
+                     height="1000"
+                     loading="lazy" />
+            </div>
+            <div class="ba-labels">
+                <span class="ba-label">GRIME</span>
+                <span class="ba-label">SHINE</span>
+            </div>
+            <div class="ba-divider" aria-hidden="true"></div>
+            <div class="ba-knob" aria-hidden="true">⟷</div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after cleaning" />
+        </div>
+        <p class="small text-muted text-center mt-3 mb-0">Illustrative pairing — your rooms, your priorities, our checklist.</p>
+    </section>
+
+    <section class="mb-5 pb-4" id="S4">
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+                <h2 class="section-title anchor">Services we offer</h2>
+                <p class="text-secondary reveal">
+                    Tell us how you live and what you need—we will tailor a plan. Popular options include move-in/move-out cleaning, seasonal deep cleans, and recurring maintenance.
+                </p>
+                <ul class="list-unstyled service-list col-lg-11 reveal">
+                    <li><strong>Regular maintenance</strong> — kitchens, baths, floors, dusting, and tidy-ups on your schedule.</li>
+                    <li><strong>Deep cleaning</strong> — baseboards, appliances, fixtures, and those easy-to-miss corners.</li>
+                    <li><strong>Move-in / move-out</strong> — empty homes ready for keys or landlords.</li>
+                    <li><strong>Custom add-ons</strong> — inside fridge, oven, interior windows, and more on request.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="rounded-4 overflow-hidden shadow reveal" style="aspect-ratio: 4/3;">
+                    <img class="w-100 h-100 maid-img-cover"
+                         src="~/images/services-supplies.jpg"
+                         asp-append-version="true"
+                         alt="Professional cleaning supplies in a bright home"
+                         width="1200"
+                         height="900"
+                         loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5 pb-4" id="S5">
+        <h2 class="section-title anchor">Service area</h2>
+        <p class="text-secondary col-lg-9 reveal">
+            Based in <strong>Leduc, Alberta</strong>, we serve homeowners and renters in Leduc and nearby communities, including south Edmonton and Leduc County. Not sure if you are in range? <a href="mailto:info@maid4uservices.ca">Send us a note</a>—we are happy to help.
+        </p>
+        <div class="row g-3 reveal">
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Leduc</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Edmonton</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Beaumont</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Nisku</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Calmar</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Devon</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Wetaskiwin</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Millet</strong></div></div>
+            <div class="col-sm-6 col-md-4"><div class="feature-card py-3 text-center mb-0"><strong>Leduc County</strong></div></div>
+        </div>
+        <p class="small text-muted mt-3 mb-0 reveal">Additional areas may be available—ask when you book.</p>
+    </section>
+
+    <section class="mb-4" id="S6">
+        <h2 class="section-title anchor">About Maid 4 U Services</h2>
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-7 reveal">
+                <p class="text-secondary">
+                    We built Maid 4 U Services around a simple promise: show up on time, clean with intention, and leave every room noticeably brighter. Our team combines efficient methods with the kind of respect we would want in our own homes.
+                </p>
+                <blockquote class="quote-block mb-0">
+                    Let us take care of the cleaning, so you can enjoy what matters most.
+                </blockquote>
+            </div>
+            <div class="col-lg-5 reveal stagger-2">
+                <div class="rounded-4 overflow-hidden shadow" style="aspect-ratio: 1;">
+                    <img class="w-100 h-100 maid-img-cover"
+                         src="~/images/about-living.jpg"
+                         asp-append-version="true"
+                         alt="Sunlit, clean living room"
+                         width="900"
+                         height="900"
+                         loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 my-4 rounded-4 text-white text-center" id="S7" style="background: linear-gradient(135deg, var(--maid-navy) 0%, var(--maid-blue-dark) 100%);">
+        <div class="container anchor py-2">
+            <h2 class="text-white mb-3">Contact us</h2>
+            <p class="text-white-50 col-lg-8 mx-auto mb-4">
+                Ready for a calmer, cleaner home? Reach out for a free estimate or to ask about senior-friendly rates.
+            </p>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 gap-md-4">
+                <a class="btn btn-maid btn-lg d-inline-flex align-items-center justify-content-center gap-2" href="tel:+16044402458">
+                    <svg class="btn-cta-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    <span>604 440 2458</span>
+                </a>
+                <a class="btn btn-outline-light btn-lg rounded-pill d-inline-flex align-items-center justify-content-center gap-2" href="mailto:info@maid4uservices.ca">
+                    <svg class="btn-cta-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round" /><path d="m22 6-10 7L2 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    <span>info@maid4uservices.ca</span>
+                </a>
+                <a class="btn btn-link text-white text-decoration-underline" href="https://maid4uservices.ca" rel="noopener noreferrer">maid4uservices.ca</a>
+            </div>
+        </div>
+    </section>
+</div>

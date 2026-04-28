@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empathetic Care Aides — compassionate home care and support in Leduc, Edmonton, and surrounding Alberta communities. Registered Care Aides, affordable plans, 24/7." />
+    <title>@ViewData["Title"] - Empathetic Care Aides</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="eca-header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top eca-nav" aria-label="Primary">
+            <div class="container eca-nav-bar">
+                <a class="navbar-brand eca-brand d-flex align-items-center gap-2 flex-shrink-0" href="#S1">
+                    <span class="eca-logo" aria-hidden="true">
+                        <img src="~/images/logo-small.png" width="36" height="36" alt="" asp-append-version="true" />
+                    </span>
+                    <span class="eca-brand-text text-start">
+                        <span class="eca-brand-main text-nowrap">Empathetic Care</span>
+                        <span class="eca-brand-sub text-nowrap">AIDES</span>
+                    </span>
+                </a>
+                <button class="navbar-toggler eca-nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ecaNav" aria-controls="ecaNav" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse eca-nav-collapse" id="ecaNav">
+                    <ul class="navbar-nav eca-nav-links ms-lg-3 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S2">Why us</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S3">Service area</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S4">Empathy</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S5">Mission</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S6">Services</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S7">About</a></li>
+                        <li class="nav-item"><a class="nav-link eca-nav-link" href="#S8">Contact</a></li>
+                    </ul>
+                    <div class="eca-nav-actions d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2 gap-lg-3 ms-lg-auto">
+                        <a class="eca-nav-phone d-inline-flex align-items-center justify-content-center justify-content-lg-start gap-2 text-decoration-none" href="tel:+16044402458">
+                            <svg class="eca-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                            <span>604 440 2458</span>
+                        </a>
+                        <a class="btn btn-eca btn-sm px-4 py-2 rounded-pill text-center" href="mailto:info@empatheticcareaides.com?subject=Free%20consultation">Free consultation</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="eca-main">
+        @RenderBody()
+    </main>
+
+    <footer class="eca-footer text-white" role="contentinfo">
+        <div class="eca-footer-accent" aria-hidden="true"></div>
+        <div class="container">
+            <div class="row py-5 g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-start gap-3">
+                        <span class="eca-footer-logo" aria-hidden="true">
+                            <img src="~/images/logo-small.png" width="44" height="44" alt="" asp-append-version="true" />
+                        </span>
+                        <div>
+                            <p class="eca-footer-brand mb-2">Empathetic Care <span class="eca-footer-brand-tag">AIDES</span></p>
+                            <div class="d-flex flex-column gap-3">
+                                <p class="eca-footer-tagline mb-0">Compassionate home care with clinical skill and a human touch—so clients feel heard, respected, and supported at home.</p>
+                                <p class="small text-white-50 mb-0">Serving <strong class="text-white-50">Leduc, Alberta</strong> and nearby communities including Edmonton and Leduc County.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h2 class="eca-footer-heading">Explore</h2>
+                    <ul class="list-unstyled eca-footer-links mb-0">
+                        <li><a href="#S1">Home</a></li>
+                        <li><a href="#S2">Why us</a></li>
+                        <li><a href="#S3">Service area</a></li>
+                        <li><a href="#S4">Empathy</a></li>
+                        <li><a href="#S5">Mission</a></li>
+                        <li><a href="#S6">Services</a></li>
+                        <li><a href="#S7">About</a></li>
+                        <li><a href="#S8">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-4 col-xl-3 ms-lg-auto">
+                    <h2 class="eca-footer-heading">Get in touch</h2>
+                    <ul class="list-unstyled eca-footer-contact mb-0">
+                        <li>
+                            <a class="eca-footer-contact-link" href="tel:+16044402458">
+                                <svg class="eca-footer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                <span>604 440 2458</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="eca-footer-contact-link" href="mailto:info@empatheticcareaides.com">
+                                <svg class="eca-footer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round" /><path d="m22 6-10 7L2 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                <span>info@empatheticcareaides.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-eca btn-sm rounded-pill mt-3 px-4" href="mailto:info@empatheticcareaides.com?subject=Free%20consultation">Request a free consultation</a>
+                </div>
+            </div>
+            <div class="eca-footer-bottom py-4">
+                <div class="row align-items-center gy-2">
+                    <div class="col-md-8 text-center text-md-start">
+                        <p class="small text-white-50 mb-0">&copy; @DateTime.UtcNow.Year Empathetic Care Aides Inc. Home care with heart.</p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a class="eca-footer-legal small" asp-page="/Privacy">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
