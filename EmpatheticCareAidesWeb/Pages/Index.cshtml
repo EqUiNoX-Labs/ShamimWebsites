@@ -2,7 +2,24 @@
 @model IndexModel
 
 <section class="hero" id="S1">
-    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-slides" data-hero-slides>
+            <div class="hero-bg-slide is-active">
+                <img src="~/images/banner.jpg" asp-append-version="true" alt="" width="1920" height="1080" decoding="async" fetchpriority="high" />
+            </div>
+            <div class="hero-bg-slide">
+                <img src="~/images/hero-wheelchair-care.jpg" asp-append-version="true" alt="" width="1600" height="1067" loading="lazy" decoding="async" />
+            </div>
+            <div class="hero-bg-slide">
+                <img src="~/images/hero-mealtime-care.jpg" asp-append-version="true" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+            <div class="hero-bg-slide">
+                <img src="~/images/hero-companionship.jpg" asp-append-version="true" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+        </div>
+        <div class="hero-bg-tint"></div>
+        <div class="hero-bg-glow"></div>
+    </div>
     <div class="container py-4">
         <div class="row align-items-center">
             <div class="col-lg-8 reveal">
@@ -19,6 +36,40 @@
         </div>
     </div>
     <div class="hero-wave" aria-hidden="true"></div>
+</section>
+
+<section class="eca-trust-strip" aria-label="Why reach out">
+    <div class="container py-4">
+        <div class="row g-3 g-md-4 justify-content-center">
+            <div class="col-6 col-lg-4">
+                <div class="eca-trust-card reveal stagger-1">
+                    <span class="eca-trust-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" stroke-linecap="round" /></svg>
+                    </span>
+                    <strong class="eca-trust-title">24/7 response</strong>
+                    <span class="eca-trust-desc">Questions answered any time, any day</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4">
+                <div class="eca-trust-card reveal stagger-2">
+                    <span class="eca-trust-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 9.5-8 10.5-4.5-1-8-5.5-8-10.5V7l8-4z" /><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </span>
+                    <strong class="eca-trust-title">Registered Care Aides</strong>
+                    <span class="eca-trust-desc">Trained, respectful, person-centred care</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="eca-trust-card reveal stagger-3">
+                    <span class="eca-trust-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z" /><circle cx="12" cy="11" r="3" /></svg>
+                    </span>
+                    <strong class="eca-trust-title">Leduc &amp; region</strong>
+                    <span class="eca-trust-desc">Local team, flexible scheduling</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <div class="container pb-5">
